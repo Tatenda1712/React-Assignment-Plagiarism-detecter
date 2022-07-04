@@ -1,0 +1,48 @@
+import {Link} from 'react-router-dom'
+export default function Navbarr({nav1, nav2,nav3}){
+    return(
+        <div>
+    <header id="header">
+         <section id="nav-bar">
+                <nav className="navbar navbar-expand-lg navbar-dark">
+                    <div className="container-fluid">
+                      <Link to="/" className="navbar-brand" href="#home"><span className="text-danger">O</span>nline <span class="text-primary">P</span>lagiarism <span class="text-warning">C</span>hecker</Link>
+                      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                      </button>
+                      <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav m-auto">
+                          <li className="nav-item">
+                            <Link to="/" className="nav-link" href="#team">Home</Link>
+                          </li>
+                          <li>
+                            <Link to="/whatsultrasuccess" className="nav-link active" href="#what">What is <span class="text-danger">O</span>nline <span class="text-primary">P</span>lagiarism <span class="text-warning">C</span>hecker?</Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link to={nav1link} className="nav-link" href="#upload">{nav1}</Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link to={nav2link} className="nav-link" href="#set">{nav2}</Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link to={nav3link} className="nav-link" href="#blog">{nav3}</Link>
+                          </li>
+                        </ul>
+                        <div>
+                        <ul className="navbar-nav m-auto">
+                          <li className="nav-item">
+                            <Link to="/help" className="nav-link active" aria-current="page" href="#contact">Help</Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link to="/logout" className="nav-link" href="#logout">logout</Link>
+                          </li>
+                          </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </nav>
+    </section>
+        </header>
+        </div>
+    )
+}

@@ -1,0 +1,60 @@
+/*Flip Cards*/
+
+.assignments-title{
+    color:rgb(2, 1, 44);
+}
+.submit-assign-border{
+    border: 2px solid rgb(2, 1, 44);
+}
+.real-sub{
+    text-decoration: none; 
+    color: rgb(2, 1, 44);  
+}
+.thecard{
+    margin: 0 auto;
+    height: 100px; 
+    width: 200px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color:rgb(37, 37, 105);
+    box-shadow:0 0 3px whitesmoke, 0 0 5px whitesmoke;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+
+}
+
+.result{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(37, 37, 105);
+    box-shadow:0 0 3px whitesmoke, 0 0 5px whitesmoke;
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    top: 30%;
+}
+.front{
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    position: relative;
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+
+}
+.assignmentupload{
+    font-size:.9rem
+}

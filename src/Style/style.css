@@ -1,0 +1,66 @@
+/*Global Css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body::-webkit-scrollbar{
+    width: 8px;
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: #0056d898;
+    border-radius: 50px;
+  }
+  body::-webkit-scrollbar-track{
+    background-color: #777;
+  }
+  body{
+    color: #a4acc4;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1rem;
+  }
+.navbar{
+    background:rgb(2, 1, 44);
+    padding: 0 !important;
+}
+.footer-bottom{
+    background:rgb(2, 1, 44);
+
+}
+.right{
+  width:400px;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/*Banner Section*/
+#banner-area{
+    background:rgb(2, 1, 44);
+    color: #fff;
+    padding-top: 4%;
+}
+.promo-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#banner a{
+    color: #fff;
+    text-decoration: none;
+}
+.shop-now{
+    background:#00A5c4;
+}
+.shopp-now{
+    color: white;
+}
+
+.social-icons img{
+    width: 60px;
+    transition:0.5s;
+}
+.social-icons a:hover img{
+   transform: translateY(-10px);
+}
+
